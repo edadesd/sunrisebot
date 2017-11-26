@@ -18,3 +18,4 @@ Still need to add:
 * Sqlite3 Python script to create tables  
 * Crontab to run daily sample/API queries and schedule sunrise/sunset posts  
 * Crontab to check for timely posts every minute  
+* Instructions to set up Twitter app and build secret.py
