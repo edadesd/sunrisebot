@@ -40,7 +40,7 @@ for post in c.fetchall():
     posted_id = (new_post[3],)
     # Update posted flag and copy to the database of past posts.
     c.execute("UPDATE scheduled_posts set posted = 1 WHERE id = ?", posted_id)
-    post_args = (new_post[0], new_post[1], posted_id)
+    post_args = (new_post[0], new_post[1], posted_id[0])
     c.execute("INSERT into posted VALUES(?, ?, ?)", post_args)
 
 # Clean posts out of the scheduled_post database.
