@@ -13,7 +13,9 @@ api.update_status(post_content)
 
 This starts the bot in a "debug" state where it won't post to Twitter so you can configure any changes you want first.
 
-Still need to add:
+Also create a file named "secret.py" in the same directory as the others with the variables needed to authenticate via tweepy.
+
+<h3>Still need to add:</h3>
 
 * Sqlite3 Python script to create tables  
 * Crontab to run daily sample/API queries and schedule sunrise/sunset posts  
